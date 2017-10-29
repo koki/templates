@@ -1,0 +1,4 @@
+package: github.com/koki/templates
+import:
+- package: github.com/ghodss/yaml
+  version: v1.0.0

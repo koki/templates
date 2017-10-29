@@ -1,0 +1,12 @@
+hash: 8faeeabe8050c5c826f6c8b9fa3735470ae943231fbc943b5eb14a0d038165b8
+updated: 2017-10-28T16:40:17.870468504-07:00
+imports:
+- name: github.com/ghodss/yaml
+  version: 0ca9ea5df5451ffdf184b4428c902747c2c11cd7
+- name: github.com/golang/glog
+  version: 44145f04b68cf362d9c4df2182967c2275eaefed
+- name: github.com/kr/pretty
+  version: cfb55aafdaf3ec08f0db22699ab822c50091b1c4
+- name: github.com/kr/text
+  version: 7cafcd837844e784b526369c9bce262804aebc60
+testImports: []

@@ -1,3 +1,2 @@
-# Example
+# YAML/JSON/map[string]interface{} templates
 
-This does examples
