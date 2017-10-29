@@ -15,6 +15,9 @@ a yaml or json (or other?) document.
 
 Template "holes" are represented as the string "${NAME}".
 
+If a "hole" is part of (but not all of) a string, then only string/number values are supported.
+This behavior is defined in `generic.fillString`.
+
 Parameter values may also have document structure and will retain
 this structure when inserted into the template.
 
@@ -92,6 +95,10 @@ func fillString(template string, params map[string]interface{}) string {
 			switch val := val.(type) {
 			case string:
 				return []byte(val)
+			case float64:
+				return []byte(pretty.Sprintf("%v", val))
+			case int:
+				return []byte(pretty.Sprintf("%v", val))
 			}
 
 			glog.Warning(pretty.Sprintf(

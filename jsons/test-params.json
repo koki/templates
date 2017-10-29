@@ -1,0 +1,4 @@
+{
+  "KUBERNETES_RO_SERVICE_HOST":"kubernetes_ro_service_host",
+  "KUBERNETES_RO_SERVICE_PORT":12345
+}

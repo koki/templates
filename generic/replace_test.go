@@ -28,6 +28,12 @@ var testCases = []TestCase{
 		Filled:   map[string]interface{}{"a": "asdfghjk"},
 	},
 	TestCase{
+		Name:     "top-level multiple holes inside string",
+		Template: map[string]interface{}{"a": "as${STRING}:${INT}:${FLOAT}"},
+		Params:   map[string]interface{}{"STRING": "df", "INT": 12, "FLOAT": 3.45},
+		Filled:   map[string]interface{}{"a": "asdf:12:3.45"},
+	},
+	TestCase{
 		Name:     "top-level hole filled by object",
 		Template: map[string]interface{}{"a": "${OBJ}"},
 		Params:   map[string]interface{}{"OBJ": map[string]interface{}{"aa": 0}},
