@@ -7,4 +7,4 @@ SCRIPTS_DIR=$(dirname $0)
 
 cd $SCRIPTS_DIR/..
 
-go test ./json ./generic
+go test ./generic ./json ./yaml
